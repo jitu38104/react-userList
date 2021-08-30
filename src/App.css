@@ -1,38 +1,45 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,200&display=swap");
+
+:root {
+  --pure: #ffffff;
+  --pink: #a569bd;
+  --gray: #b4b4b4;
+  --green: #73c6b6;
+  --bg: #f0f3f4;
+  --font: "Raleway", sans-serif;
+}
+
+div.container {
+  max-width: 50rem;
+  margin: 2rem auto 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.container div.list-table table.MuiTable-root {
+  background-color: var(--pure);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.MuiTableCell-body {
+  font-size: 1rem !important;
+  font-family: var(--font) !important;
+  font-weight: 600 !important;
+  background-color: var(--green);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MuiTableCell-head {
+  font-size: 1rem !important;
+  font-family: var(--font) !important;
+  font-weight: 600 !important;
+  background-color: var(--pink);
+  color: white !important;
+}
+
+.Mui-selected {
+  background-color: var(--gray) !important;
+}
+
+div.user-img {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
